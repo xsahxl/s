@@ -1,0 +1,26 @@
+{
+  "name": "@xsahxl/ss",
+  "version": "0.0.3",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "s": "./bin/s"
+  },
+  "scripts": {
+    "watch": "tsc -w",
+    "prebuild": "rimraf dist",
+    "build": "tsc",
+    "prepub": "npm run build",
+    "pub": "npm publish"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "dependencies": {
+    "rimraf": "^3.0.2"
+  }
+}
