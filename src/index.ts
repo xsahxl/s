@@ -1,9 +1,6 @@
-async function say(message: string) {
-  return 'Hello, ' + message;
-}
+import { Command } from 'commander';
+const program = new Command();
+import * as utils from './utils';
 
-(async () => {
-  const message = 'World';
-  const data = await say(message);
-  console.log(data);
-})();
+program.version(utils.getVersion(), '-v, --version');
+program.parse(process.argv);
