@@ -7,6 +7,7 @@
     "s": "./bin/s"
   },
   "scripts": {
+    "prewatch": "rimraf dist",
     "watch": "tsc -w",
     "prebuild": "rimraf dist",
     "build": "tsc",
@@ -21,10 +22,18 @@
     "registry": "https://registry.npmjs.org"
   },
   "dependencies": {
+    "@serverless-devs/core": "^0.1.10",
+    "chalk": "^4.1.2",
     "commander": "^8.3.0",
+    "fs-extra": "^10.0.0",
+    "js-yaml": "^4.1.0",
+    "minimist": "^1.2.5",
     "rimraf": "^3.0.2"
   },
   "devDependencies": {
-    "@types/node": "^16.11.6"
+    "@types/fs-extra": "^9.0.13",
+    "@types/js-yaml": "^4.0.4",
+    "@types/node": "^16.11.6",
+    "prettier": "^2.4.1"
   }
 }
